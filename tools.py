@@ -13,7 +13,8 @@ api_key = os.getenv("TAVILY_API_KEY")
 
 if not api_key:
     api_key = st.secrets.get("TAVILY_API_KEY")
-web_tools = TavilySearch(max_results=3)
+web_tools = TavilySearch(max_results=3,
+                        tavily_api_key=api_key)
 
 
 # arxiv_wrapper = ArxivAPIWrapper(top_k_results=3,doc_content_chars_max=500)
