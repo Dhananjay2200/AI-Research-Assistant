@@ -20,6 +20,8 @@ import shutil
 
 load_dotenv()
 api_key = os.getenv("GROQ")
+if not api_key:
+    api_key = st.secrets.get("GROQ")
 
 PDF_FOLDER = './documents'
 os.makedirs(PDF_FOLDER,exist_ok=True)
