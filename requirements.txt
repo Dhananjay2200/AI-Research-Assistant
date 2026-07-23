@@ -1,7 +1,8 @@
-fastapi
-uvicorn[standard]
-python-multipart
+
 python-dotenv
+os
+streamlit
+
 
 langchain
 langchain-core
@@ -11,6 +12,8 @@ langchain-groq
 langchain-huggingface
 langsmith
 langchain-tavily
+torch
+torchvision
 
 sentence-transformers
 faiss-cpu
