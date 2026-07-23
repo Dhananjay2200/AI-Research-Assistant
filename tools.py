@@ -8,7 +8,7 @@ import wikipedia
 load_dotenv()
 
 api_key = os.getenv("TAVILY_API_KEY")
-web_tools = TavilySearch(max_result=3)
+web_tools = TavilySearch(max_results=3)
 
 
 # arxiv_wrapper = ArxivAPIWrapper(top_k_results=3,doc_content_chars_max=500)
